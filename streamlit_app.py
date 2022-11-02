@@ -54,3 +54,8 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchall()
 streamlit.text(my_data_row)
+
+# 2nd box
+add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
+streamlit.write('The user entered ', add_my_fruit)
+
